@@ -1,0 +1,33 @@
+mat-card {
+  margin: 0 30px;
+  max-width: 1280px;
+}
+
+.bg{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+.spn-screen {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+mat-icon {
+  font-size: 15pt;
+}
+
+.btn-screen {
+  min-width: 30px;
+  padding: 0 10px;
+}
+
+.mt-icn-mode {
+  font-size: 20px;
+}
