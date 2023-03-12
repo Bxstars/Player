@@ -31,3 +31,15 @@ mat-card {
 .btn-mode-title {
   font-size: 8pt;
 }
+
+.mt-icn-controls {
+  font-size: 30pt;
+  height: 30px ;
+  width: 60px;
+}
+
+.btn-controls {
+  border: none;
+  min-width: 1px;
+  padding: 0 0px;
+}

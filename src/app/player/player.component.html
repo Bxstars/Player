@@ -1,7 +1,7 @@
 <div class="bg">
   <mat-card class="mat-elevation-z8">
     <mat-card-header>
-        <mat-card-title>Video Player</mat-card-title>
+        <mat-card-title>Player</mat-card-title>
     </mat-card-header>
     <!-- <div align="end" class="btn-mode">
       <button mat-stroked-button class="btn-mode-title" title="Mode Light"><mat-icon class="mt-icn-mode">tips_and_updates</mat-icon>Light</button>
@@ -23,10 +23,12 @@
 
 
     <div align="center">
-      <button mat-raised-button (click)="playPause()">
-        <mat-icon> play_circle_outline </mat-icon>
+      <button class="btn-controls" *ngIf="status === true" (click)="playPause()">
+        <mat-icon class="mt-icn-controls"> play_circle </mat-icon>
      </button>
-        <!-- <mat-icon> pause_circle_outline </mat-icon> -->
+     <button class="btn-controls" *ngIf="status === false" (click)="playPause()">
+       <mat-icon class="mt-icn-controls"> pause_circle </mat-icon>
+     </button>
     </div>
 
 </mat-card>

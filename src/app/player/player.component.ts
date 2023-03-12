@@ -7,6 +7,8 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements AfterViewInit {
   myVideo:any;
+  status: boolean = true;
+
   constructor () {}
 
   ngAfterViewInit(): void {
@@ -16,6 +18,7 @@ export class PlayerComponent implements AfterViewInit {
   playPause() {
     if (this.myVideo != null) {
       this.myVideo.paused ? this.myVideo.play() : this.myVideo?.pause();
+      this.status = this.myVideo.paused
     }
   }
 
