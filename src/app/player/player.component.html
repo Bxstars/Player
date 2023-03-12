@@ -3,22 +3,22 @@
     <mat-card-header>
         <mat-card-title>Video Player</mat-card-title>
     </mat-card-header>
-    <!-- <div align="end">
-      <button mat-stroked-button><mat-icon class="mt-icn-mode">lightbulb_outline</mat-icon> Modo Escuro</button>
+    <!-- <div align="end" class="btn-mode">
+      <button mat-stroked-button class="btn-mode-title" title="Mode Light"><mat-icon class="mt-icn-mode">tips_and_updates</mat-icon>Light</button>
     </div> -->
 
     <mat-card-content>
       <div>
-        <video class="dv-video" id="video1" width="640" height="360">
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <video class="dv-video" id="video1" width="426" height="240" poster="assets/capa.jpg" preload="auto">
+          <source src="assets/catHarry.mp4" type="video/mp4">
         </video>
       </div>
     </mat-card-content>
 
     <div align="end">
-          <button class="btn-screen" mat-button title="Tela MiniPlayer" (click)="makeSmall()"><mat-icon>close_fullscreen</mat-icon></button>
-          <button class="btn-screen" mat-button title="Tela Normal" (click)="makeNormal()"><mat-icon>open_in_full</mat-icon></button>
-          <button class="btn-screen" mat-button title="Tela Fullscreen" (click)="makeFull()"><mat-icon>fullscreen</mat-icon></button>
+          <button class="btn-screen" mat-button title="Tela MiniPlayer" (click)="makeSmall()"><mat-icon class="mt-icn-screen">close_fullscreen</mat-icon></button>
+          <button class="btn-screen" mat-button title="Tela Normal" (click)="makeNormal()"><mat-icon class="mt-icn-screen">open_in_full</mat-icon></button>
+          <button class="btn-screen" mat-button title="Tela Fullscreen" (click)="makeFull()"><mat-icon class="mt-icn-screen">fullscreen</mat-icon></button>
     </div>
 
 
