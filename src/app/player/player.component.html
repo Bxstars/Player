@@ -1,15 +1,15 @@
 <div class="bg">
   <mat-card class="mat-elevation-z8">
     <mat-card-header>
-        <mat-card-title>Player</mat-card-title>
+        <mat-card-title>Player - catHarry</mat-card-title>
+        <div align="end" class="btn-mode">
+          <button mat-stroked-button class="btn-mode-title" onchange="modeScreen($event)"><mat-icon class="mt-icn-mode">tips_and_updates</mat-icon>Light</button>
+        </div>
     </mat-card-header>
-    <!-- <div align="end" class="btn-mode">
-      <button mat-stroked-button class="btn-mode-title" title="Mode Light"><mat-icon class="mt-icn-mode">tips_and_updates</mat-icon>Light</button>
-    </div> -->
 
     <mat-card-content>
       <div>
-        <video class="dv-video" id="video1" width="426" height="240" poster="assets/capa.jpg" preload="auto">
+        <video class="dv-video" id="catHarry" width="426" height="240" poster="assets/capa.jpg" preload="auto">
           <source src="assets/catHarry.mp4" type="video/mp4">
         </video>
       </div>
@@ -21,7 +21,6 @@
           <button class="btn-screen" mat-button title="Tela Fullscreen" (click)="makeFull()"><mat-icon class="mt-icn-screen">fullscreen</mat-icon></button>
     </div>
 
-
     <div align="center">
       <button class="btn-controls" *ngIf="status === true" (click)="playPause()">
         <mat-icon class="mt-icn-controls"> play_circle </mat-icon>
@@ -29,8 +28,10 @@
      <button class="btn-controls" *ngIf="status === false" (click)="playPause()">
        <mat-icon class="mt-icn-controls"> pause_circle </mat-icon>
      </button>
+     <button class="btn-controls" (click)="forward()">
+       <mat-icon class="mt-icn-controls"> fast_forward </mat-icon>
+     </button>
     </div>
-
 </mat-card>
 </div>
 

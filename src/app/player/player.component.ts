@@ -12,7 +12,7 @@ export class PlayerComponent implements AfterViewInit {
   constructor () {}
 
   ngAfterViewInit(): void {
-  this.myVideo = document.getElementById("video1") as HTMLVideoElement | null;
+  this.myVideo = document.getElementById("catHarry") as HTMLVideoElement | null;
   }
 
   playPause() {
@@ -37,4 +37,17 @@ export class PlayerComponent implements AfterViewInit {
     this.myVideo.height = 240;
   }
 
+  forward() {
+    console.log('passou aqui')
+    this.myVideo as HTMLVideoElement
+    this.myVideo.playbackRate = 5.0;
+    // let video = document.getElementById("catHarry") as HTMLVideoElement;
+    // video.defaultPlaybackRate = 2.0;
+
+  }
+
+  modeScreen(event:any) {
+   const html = document.querySelector('html') as HTMLElement
+   html.classList.toggle('dark-mode')
+  }
 }

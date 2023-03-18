@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 html, body { height: 100%; }
-body { margin: 0;}
+body { margin: 0; background-color: var(--color-bg);}
 
+:root {
+  --color-icons: #838383;
+  --color-player: #000;
+  --color-text: #000;
+  --color-mode: #f1cf37c7;
+  --color-bg: #fafafa;
+  --color-bg-card: #fff;
+}
+
+.dark-mode:root {
+  --color-icons: #838383;
+  --color-player: #fff;
+  --color-text: #fff;
+  --color-mode: #4f1af0c7;
+  --color-bg: #323232;
+  --color-bg-card: #323232;
+}
