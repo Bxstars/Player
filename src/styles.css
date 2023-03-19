@@ -8,7 +8,7 @@ body { margin: 0; background-color: var(--color-bg);}
   --color-player: #000;
   --color-text: #000;
   --color-mode: #f1cf37c7;
-  --color-bg: #fafafa;
+  --color-bg: #fff;
   --color-bg-card: #fff;
 }
 
@@ -16,7 +16,7 @@ body { margin: 0; background-color: var(--color-bg);}
   --color-icons: #838383;
   --color-player: #fff;
   --color-text: #fff;
-  --color-mode: #4f1af0c7;
-  --color-bg: #323232;
-  --color-bg-card: #323232;
+  --color-mode: #4e3a8a;
+  --color-bg: #1b1b1b;
+  --color-bg-card: #1b1b1b;
 }

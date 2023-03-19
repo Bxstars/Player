@@ -1,9 +1,14 @@
 mat-card {
   margin: 0 30px;
   max-width: 1280px;
+  background-color: var(--color-bg-card);
 }
 
-.bg{
+mat-card-title {
+color: var(--color-text);
+}
+
+.bg {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,13 +16,18 @@ mat-card {
 }
 
 .btn-screen {
-  min-width: 6px;
+  min-width: 5px;
   padding: 0;
 }
 
 .mt-icn-screen {
   color: var(--color-icons);
-  font-size: 13pt;
+  font-size: 14pt;
+}
+
+.btn-mode {
+  margin-bottom: 5px;
+  color: var(--color-text);
 }
 
 .mt-icn-mode {
@@ -25,13 +35,18 @@ mat-card {
   font-size: 21px;
 }
 
-.btn-mode {
-  margin-bottom: 5px;
+.btn-mode-title {
+  margin-left: 20px;
+  padding: 0;
+  font-size: 10pt;
+  border-color: var(--color-mode);
 }
 
-.btn-mode-title {
-  font-size: 8pt;
-  border-color: var(--color-mode);
+.btn-controls {
+  min-width: 1px;
+  padding: 0px;
+  border: none;
+  background-color: var(--color-bg);
 }
 
 .mt-icn-controls {
@@ -41,8 +56,7 @@ mat-card {
   width: 60px;
 }
 
-.btn-controls {
-  border: none;
-  min-width: 1px;
-  padding: 0 0px;
+.dv-item-controls {
+  display: flex;
+  justify-content: center;
 }
