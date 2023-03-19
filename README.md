@@ -1,6 +1,6 @@
 # Player
 
-Reproduzir Vídeos com controles personalizaados.
+Reproduzir vídeos com controles personalizados.
 
 
 ## 
