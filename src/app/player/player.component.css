@@ -5,7 +5,8 @@ mat-card {
 }
 
 mat-card-title {
-color: var(--color-text);
+  color: var(--color-text);
+  font-size: 32pt;
 }
 
 .bg {
@@ -18,11 +19,17 @@ color: var(--color-text);
 .btn-screen {
   min-width: 5px;
   padding: 0;
+  border: none;
+  background-color: var(--color-bg);
 }
 
 .mt-icn-screen {
   color: var(--color-icons);
   font-size: 14pt;
+}
+
+.mt-icn-screen:hover {
+  color: var(--color-mode);
 }
 
 .btn-mode {
@@ -52,8 +59,19 @@ color: var(--color-text);
 .mt-icn-controls {
   color: var(--color-player);
   font-size: 30pt;
-  height: 30px ;
+  height: 35px ;
   width: 60px;
+}
+
+.mt-icn-controls-second {
+  color: var(--color-player-second);
+  font-size: 20pt;
+  height: 28px ;
+  width: 46px;
+}
+
+.mt-icn-controls-second:hover {
+  color:var(--color-mode);
 }
 
 .dv-item-controls {

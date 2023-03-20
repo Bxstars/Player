@@ -9,6 +9,7 @@ export class PlayerComponent implements AfterViewInit {
   myVideo: any;
   status: boolean = true;
   modeDark: boolean = false;
+  videoEnd: boolean = true;
 
   constructor() { }
 
@@ -16,7 +17,18 @@ export class PlayerComponent implements AfterViewInit {
     this.myVideo = document.getElementById(
       'catHarry'
     ) as HTMLVideoElement | null;
+    this.setType()
   }
+
+  setType() {
+    this.myVideo as HTMLVideoElement;
+  }
+
+  // getDuration() {
+  //   console.log(this.myVideo.duration)
+  //   console.log(this.myVideo.currentTime)
+  //   this.videoEnd = this.myVideo.ended;
+  // }
 
   /* #region screen controls */
   makeBig() {
@@ -39,6 +51,7 @@ export class PlayerComponent implements AfterViewInit {
   /* #endregion */
 
   playPause() {
+    // this.getDuration();
     if (this.myVideo != null) {
       this.myVideo.paused ? this.myVideo.play() : this.myVideo?.pause();
       this.status = this.myVideo.paused;
@@ -46,12 +59,15 @@ export class PlayerComponent implements AfterViewInit {
   }
 
   forward() {
-    this.myVideo as HTMLVideoElement;
     this.myVideo.playbackRate = 2.0;
+  }
+
+  mute() {
+    this.myVideo.muted = !this.myVideo.muted
   }
 
   darkOrLight(event: any) {
     const html = document.querySelector('html') as HTMLElement;
-    html.classList.toggle('dark-mode');
+    this.modeDark = html.classList.toggle('dark-mode');
   }
 }

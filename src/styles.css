@@ -6,8 +6,9 @@ body { margin: 0; background-color: var(--color-bg);}
 :root {
   --color-icons: #838383;
   --color-player: #000;
+  --color-player-second: #838383;
   --color-text: #000;
-  --color-mode: #f1cf37c7;
+  --color-mode: #ddbd30c7;
   --color-bg: #fff;
   --color-bg-card: #fff;
 }
@@ -15,8 +16,13 @@ body { margin: 0; background-color: var(--color-bg);}
 .dark-mode:root {
   --color-icons: #838383;
   --color-player: #fff;
+  --color-player-second: #838383;
   --color-text: #fff;
   --color-mode: #4e3a8a;
   --color-bg: #1b1b1b;
   --color-bg-card: #1b1b1b;
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 24px;
 }

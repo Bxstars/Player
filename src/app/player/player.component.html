@@ -8,7 +8,8 @@
           class="btn-mode-title"
           (click)="darkOrLight($event)"
         >
-          <mat-icon class="mt-icn-mode"> tips_and_updates </mat-icon>
+          <mat-icon *ngIf="modeDark === false" class="mt-icn-mode" title="Light Mode"> tips_and_updates </mat-icon>
+          <mat-icon *ngIf="modeDark === true" class="mt-icn-mode" title="Dark Mode"> lightbulb_outline </mat-icon>
         </button>
       </div>
     </mat-card-header>
@@ -31,24 +32,21 @@
     <div align="end">
       <button
         class="btn-screen"
-        mat-button
-        title="Tela MiniPlayer"
+        title="Small"
         (click)="makeSmall()"
       >
         <mat-icon class="mt-icn-screen">close_fullscreen</mat-icon>
       </button>
       <button
         class="btn-screen"
-        mat-button
-        title="Tela Normal"
+        title="Default"
         (click)="makeNormal()"
       >
         <mat-icon class="mt-icn-screen">open_in_full</mat-icon>
       </button>
       <button
         class="btn-screen"
-        mat-button
-        title="Tela Fullscreen"
+        title="Big"
         (click)="makeBig()"
       >
         <mat-icon class="mt-icn-screen">fullscreen</mat-icon>
@@ -57,13 +55,17 @@
 
     <!-- Rewind 10-->
     <div class="dv-item-controls">
-      <!-- <button class="btn-controls" title="Retroceder">
+      <button class="btn-controls" (click)="mute()" title="Mute">
+        <mat-icon class="mt-icn-controls-second"> volume_off </mat-icon>
+      </button>
+<!--
+      <button class="btn-controls" title="Retroceder">
         <mat-icon class="mt-icn-controls"> replay_10 </mat-icon>
       </button> -->
       <!-- Play / Pause -->
       <button
         class="btn-controls"
-        *ngIf="status === true"
+        *ngIf="status === true || videoEnd === true"
         (click)="playPause()"
         title="Play"
       >
@@ -82,9 +84,10 @@
         <mat-icon class="mt-icn-controls"> forward_10 </mat-icon>
       </button> -->
       <!-- Speed 2.0 -->
-      <button class="btn-controls" (click)="forward()" title="Velocidade 2X">
-        <mat-icon class="mt-icn-controls"> fast_forward </mat-icon>
+      <button class="btn-controls" (click)="forward()" title="Speed 2X">
+        <mat-icon class="mt-icn-controls-second"> fast_forward </mat-icon>
       </button>
+
     </div>
   </mat-card>
 </div>
