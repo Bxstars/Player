@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; background-color: var(--color-bg);}
+body { margin: 0; background: linear-gradient(45deg, #64568f 10%,#42718a , #54428a 90% )  }
 
 :root {
   --color-icons: #838383;
@@ -9,8 +9,7 @@ body { margin: 0; background-color: var(--color-bg);}
   --color-player-second: #838383;
   --color-text: #000;
   --color-mode: #ddbd30c7;
-  --color-bg: #fff;
-  --color-bg-card: #fff;
+  --color-bg-card: #ffffff81;
 }
 
 .dark-mode:root {
@@ -18,11 +17,11 @@ body { margin: 0; background-color: var(--color-bg);}
   --color-player: #fff;
   --color-player-second: #838383;
   --color-text: #fff;
-  --color-mode: #4e3a8a;
-  --color-bg: #1b1b1b;
-  --color-bg-card: #1b1b1b;
+  --color-mode: #54428a;
+  --color-bg-card: #1b1b1b85;
 }
 
 .mat-card-header .mat-card-title {
   font-size: 24px;
 }
+

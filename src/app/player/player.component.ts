@@ -11,30 +11,30 @@ export class PlayerComponent implements AfterViewInit {
   modeDark: boolean = false;
   videoEnd: boolean = true;
 
-  constructor() { }
+  constructor() {}
 
   ngAfterViewInit(): void {
     this.myVideo = document.getElementById(
       'catHarry'
     ) as HTMLVideoElement | null;
-    this.setType()
+    this.setType();
   }
 
   setType() {
     this.myVideo as HTMLVideoElement;
   }
 
-  // getDuration() {
-  //   console.log(this.myVideo.duration)
-  //   console.log(this.myVideo.currentTime)
-  //   this.videoEnd = this.myVideo.ended;
-  // }
+  getDuration() {
+    console.log(this.myVideo.duration);
+    console.log(this.myVideo.currentTime);
+    this.videoEnd = this.myVideo.ended;
+  }
 
   /* #region screen controls */
   makeBig() {
     // 720p (HD): 1280 x 720
     this.myVideo.width = 1280;
-    this.myVideo.height = 720;
+    this.myVideo.height = 400;
   }
 
   makeNormal() {
@@ -51,7 +51,7 @@ export class PlayerComponent implements AfterViewInit {
   /* #endregion */
 
   playPause() {
-    // this.getDuration();
+    this.getDuration();
     if (this.myVideo != null) {
       this.myVideo.paused ? this.myVideo.play() : this.myVideo?.pause();
       this.status = this.myVideo.paused;
@@ -63,7 +63,7 @@ export class PlayerComponent implements AfterViewInit {
   }
 
   mute() {
-    this.myVideo.muted = !this.myVideo.muted
+    this.myVideo.muted = !this.myVideo.muted;
   }
 
   darkOrLight(event: any) {
