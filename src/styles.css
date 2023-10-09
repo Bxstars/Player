@@ -1,7 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; background: linear-gradient(45deg, #64568f 10%,#42718a , #54428a 90% )  }
+body { background: linear-gradient(45deg, #64568f 10%,#42718a , #54428a 90% ) no-repeat  }
+
+* {
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0
+  }
 
 :root {
   --color-icons: #838383;

@@ -1,10 +1,10 @@
 <div class="bg">
-  <mat-card class="mat-elevation-z8">
+  <mat-card class="card-screen">
     <mat-card-header>
       <mat-card-title>Player - catHarry</mat-card-title>
       <div class="btn-mode">
         <button
-          mat-stroked-button
+          mat-icon-button
           class="btn-mode-title"
           (click)="darkOrLight($event)"
         >
@@ -41,98 +41,27 @@
       </div>
     </mat-card-content>
 
-    <!-- <mat-progress-bar id="progress"  max="100" value="0" class="bar-progress"></mat-progress-bar> -->
-
-    <mat-grid-list cols="3" rowHeight="60px" gutterSize="0px">
-      <mat-grid-tile colspan="1" rowspan="1"> </mat-grid-tile>
-      <mat-grid-tile colspan="1" rowspan="1">
-        <div class="mat-grid-tile-content-c">
-          <button class="btn-controls" (click)="mute()" title="Mute">
-            <mat-icon class="mt-icn-controls-second"> volume_off </mat-icon>
-          </button>
-
-          <!-- <button class="btn-controls" title="Retroceder">
-          <mat-icon class="mt-icn-controls"> replay_10 </mat-icon>
-        </button> -->
-          <!-- Play / Pause -->
-          <button
-            class="btn-controls"
-            *ngIf="status === true || videoEnd === true"
-            (click)="playPause()"
-            title="Play"
-          >
-            <mat-icon class="mt-icn-controls"> play_circle </mat-icon>
-          </button>
-          <button
-            class="btn-controls"
-            *ngIf="status === false"
-            (click)="playPause()"
-            title="Pause"
-          >
-            <mat-icon class="mt-icn-controls"> pause_circle </mat-icon>
-          </button>
-          <!-- Forward 10 -->
-          <!-- <button class="btn-controls" title="Avançar">
-          <mat-icon class="mt-icn-controls"> forward_10 </mat-icon>
-        </button> -->
-          <!-- Speed 2.0 -->
-          <button class="btn-controls" (click)="forward()" title="Speed 2X">
-            <mat-icon class="mt-icn-controls-second"> fast_forward </mat-icon>
-          </button>
-        </div>
-      </mat-grid-tile>
-
-      <mat-grid-tile colspan="1" rowspan="1">
-        <div class="mat-grid-tile-content">
-          <button class="btn-screen" title="Small" (click)="makeSmall()">
-            <mat-icon class="mt-icn-screen">close_fullscreen</mat-icon>
-          </button>
-          <button class="btn-screen" title="Default" (click)="makeNormal()">
-            <mat-icon class="mt-icn-screen">open_in_full</mat-icon>
-          </button>
-          <button class="btn-screen" title="Big" (click)="makeBig()">
-            <mat-icon class="mt-icn-screen">fullscreen</mat-icon>
-          </button>
-        </div>
-      </mat-grid-tile>
-    </mat-grid-list>
-
     <!-- <div classs="dv-bar-screen">
-
-        <mat-progress-bar id="progress"  max="100" value="0" class="bar-progress"></mat-progress-bar>
-
-      <button
-        class="btn-screen"
-        title="Small"
-        (click)="makeSmall()"
-      >
+      <button class="btn-screen" title="Small" (click)="makeSmall()">
         <mat-icon class="mt-icn-screen">close_fullscreen</mat-icon>
       </button>
-      <button
-        class="btn-screen"
-        title="Default"
-        (click)="makeNormal()"
-      >
+      <button class="btn-screen" title="Default" (click)="makeNormal()">
         <mat-icon class="mt-icn-screen">open_in_full</mat-icon>
       </button>
-      <button
-        class="btn-screen"
-        title="Big"
-        (click)="makeBig()"
-      >
+      <button class="btn-screen" title="Big" (click)="makeBig()">
         <mat-icon class="mt-icn-screen">fullscreen</mat-icon>
       </button>
     </div> -->
 
-    <!-- Rewind 10-->
     <!-- <div class="dv-item-controls">
       <button class="btn-controls" (click)="mute()" title="Mute">
         <mat-icon class="mt-icn-controls-second"> volume_off </mat-icon>
-      </button> -->
-    <!--
+      </button>
+
       <button class="btn-controls" title="Retroceder">
         <mat-icon class="mt-icn-controls"> replay_10 </mat-icon>
       </button> -->
+
     <!-- Play / Pause -->
     <!-- <button
         class="btn-controls"
@@ -157,9 +86,7 @@
     <!-- Speed 2.0 -->
     <!-- <button class="btn-controls" (click)="forward()" title="Speed 2X">
         <mat-icon class="mt-icn-controls-second"> fast_forward </mat-icon>
-      </button> -->
-
-    <!--
+      </button>
     </div> -->
   </mat-card>
 </div>
