@@ -12,18 +12,14 @@ body { background: linear-gradient(45deg, #64568f 10%,#42718a , #54428a 90% ) no
   }
 
 :root {
-  --color-icons: #838383;
   --color-player: #000;
-  --color-player-second: #838383;
   --color-text: #000;
   --color-mode: #ddbd30c7;
   --color-bg-card: #ffffff81;
 }
 
 .dark-mode:root {
-  --color-icons: #838383;
   --color-player: #fff;
-  --color-player-second: #838383;
   --color-text: #fff;
   --color-mode: #54428a;
   --color-bg-card: #1b1b1b85;

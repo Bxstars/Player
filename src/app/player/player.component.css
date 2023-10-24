@@ -1,7 +1,13 @@
 mat-card {
   display: flex;
-  padding: 30px;
+  padding: 20px;
+
   background-color: var(--color-bg-card);
+}
+
+mat-card-title {
+  color: var(--color-text);
+  font-size: 25pt;
 }
 
 .mat-mdc-card-header {
@@ -12,24 +18,10 @@ mat-card {
 }
 
 .mat-mdc-card-content {
-  padding: 16px 16px;
+  padding: 10px 10px;
 }
 
-mat-card-title {
-  color: var(--color-text);
-  font-size: 25pt;
-}
-
-dv-bar-screen {
-  display: flex;
-  flex-direction: row;
-  flex-flow: column wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.bg {
-
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,73 +29,60 @@ dv-bar-screen {
   overflow: hidden;
 }
 
-/* .btn-screen {
-  position:relative;
-  min-width: 5px;
-  padding: 0;
-  border: none;
-  background-color: var(--color-bg);
-}
-
-.btn-screen:hover {
-  top:3px;border-bottom:1px solid #999
-}
- */
-
-
-.mt-icn-screen {
-  color: var(--color-icons);
-  font-size: 14pt;
-}
-
-.mt-icn-screen:hover {
-  color: var(--color-mode);
-}
-
-.btn-mode {
+.mode {
   margin-bottom: 5px;
   color: var(--color-text);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
 }
 
-.mt-icn-mode {
-  color:var(--color-mode);
-  font-size: 20pt;
-}
-
-.btn-mode-title {
+.mode__lamp {
   align-items: center;
   margin-left: 20px;
   border-color: var(--color-mode);
 }
 
-.btn-controls {
-  min-width: 1px;
-  padding: 0px;
-  border: none;
-  font-size: 10pt;
-  background-color: var(--color-bg);
-}
-
-.mt-icn-controls {
-  color: var(--color-player);
-  font-size: 30pt;
-  height: 35px ;
-  width: 60px;
-}
-
-.mt-icn-controls-second {
-  color: var(--color-player-second);
-  font-size: 20pt;
-  height: 28px ;
-  width: 46px;
-}
-
-.mt-icn-controls-second:hover {
+.mode__lamp--light,
+.mode__lamp--dark {
   color:var(--color-mode);
+  font-size: 20pt;
 }
 
-.dv-item-controls {
+.controls__bar {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
-  font-size: 15px;
+  align-items: baseline;
+  padding: 10px;
+}
+
+.control__bar__player__voloff,
+.control__bar__player__replay10,
+.control__bar__player__play,
+.control__bar__player__pause,
+.control__bar__player__forward10,
+.control__bar__player__fastforward {
+  padding: 10px;
+  background-color: var(--color-bg);
+  color: var(--color-player);
+}
+
+.control__bar__player__pause,.control__bar__player__play:active {
+  color: rgb(76, 146, 215);
+}
+
+.controls__bar__screen__small,
+.controls__bar__screen__big {
+  padding: 10px 2px;
+  background-color: var(--color-bg);
+  color: var(--color-player);
+}
+
+.controls__bar__screen__icon {
+  font-size: 18px;
+}
+
+.control__bar__player__icon{
+  font-size: 25px;
 }
