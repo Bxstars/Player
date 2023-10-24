@@ -15,7 +15,7 @@ export class PlayerComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.myVideo = document.getElementById(
-      'catHarry'
+      'playVideo'
     ) as HTMLVideoElement | null;
     this.setType();
   }
@@ -31,22 +31,16 @@ export class PlayerComponent implements AfterViewInit {
   }
 
   /* #region screen controls */
-  makeBig() {
-    // 720p (HD): 1280 x 720
-    this.myVideo.width = 1280;
-    this.myVideo.height = 400;
-  }
-
-  makeNormal() {
-    //360p (SD): 640 x 360
-    this.myVideo.width = 640;
-    this.myVideo.height = 360;
-  }
-
   makeSmall() {
     //240p (SD): 426 x 240
     this.myVideo.width = 426;
     this.myVideo.height = 240;
+  }
+
+  makeBig() {
+    // 720p (HD): 1280 x 720
+    this.myVideo.width = 1280;
+    this.myVideo.height = 400;
   }
   /* #endregion */
 
