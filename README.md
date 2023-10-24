@@ -2,7 +2,10 @@
 
 Reproduzir vídeos com controles personalizados.
 
-![alt text](https://github.com/Bxstars/Player/blob/master/src/assets/player.png "Tela de Player - Mode Light")
+![alt text](https://github.com/Bxstars/Player/blob/master/player_big.png "Tela de Player - Mode Light")
+## 
+
+![alt text](https://github.com/Bxstars/Player/blob/master/player_small.png "Tela de Player - Mode Dark")
 ## 
 
 
@@ -10,6 +13,6 @@ Reproduzir vídeos com controles personalizados.
 
 Tecnologias | Versão | Links
 ------------ | ------------- | -------------
-Angular | 14.2.10 | https://angular.io/
+Angular | 16.2.4 | https://angular.io/
 
 
