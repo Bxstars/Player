@@ -7,21 +7,23 @@
           mat-icon-button
           class="mode__lamp"
           (click)="darkOrLight($event)"
-        >
-          <mat-icon
-            *ngIf="modeDark === false"
-            class="mode__lamp--light"
-            title="Light Mode"
           >
-            tips_and_updates
-          </mat-icon>
-          <mat-icon
-            *ngIf="modeDark === true"
-            class="mode__lamp--dark"
-            title="Dark Mode"
-          >
-            lightbulb_outline
-          </mat-icon>
+          @if (modeDark === false) {
+            <mat-icon
+              class="mode__lamp--light"
+              title="Light Mode"
+              >
+              tips_and_updates
+            </mat-icon>
+          }
+          @if (modeDark === true) {
+            <mat-icon
+              class="mode__lamp--dark"
+              title="Dark Mode"
+              >
+              lightbulb_outline
+            </mat-icon>
+          }
         </button>
       </div>
     </mat-card-header>
@@ -34,7 +36,7 @@
           width="426"
           height="240"
           preload="auto"
-        >
+          >
           <source src="assets/video/video.mp4" type="video/mp4" />
         </video>
       </div>
@@ -45,7 +47,7 @@
             class="control__bar__player__voloff"
             (click)="mute()"
             title="Mute"
-          >
+            >
             <mat-icon class="control__bar__player__icon"> volume_off </mat-icon>
           </button>
 
@@ -53,27 +55,29 @@
             <mat-icon class="control__bar__player__icon"> replay_10 </mat-icon>
           </button>
 
-          <button
-            class="control__bar__player__play"
-            *ngIf="status === true || videoEnd === true"
-            (click)="playPause()"
-            title="Play"
-          >
-            <mat-icon class="control__bar__player__icon">
-              play_circle
-            </mat-icon>
-          </button>
+          @if (status === true || videoEnd === true) {
+            <button
+              class="control__bar__player__play"
+              (click)="playPause()"
+              title="Play"
+              >
+              <mat-icon class="control__bar__player__icon">
+                play_circle
+              </mat-icon>
+            </button>
+          }
 
-          <button
-            class="control__bar__player__pause"
-            *ngIf="status === false"
-            (click)="playPause()"
-            title="Pause"
-          >
-            <mat-icon class="control__bar__player__icon">
-              pause_circle
-            </mat-icon>
-          </button>
+          @if (status === false) {
+            <button
+              class="control__bar__player__pause"
+              (click)="playPause()"
+              title="Pause"
+              >
+              <mat-icon class="control__bar__player__icon">
+                pause_circle
+              </mat-icon>
+            </button>
+          }
 
           <button class="control__bar__player__forward10" title="Avançar">
             <mat-icon class=""> forward_10 </mat-icon>
@@ -83,7 +87,7 @@
             class="control__bar__player__fastforward"
             (click)="forward()"
             title="Speed 2X"
-          >
+            >
             <mat-icon class="control__bar__player__icon">
               fast_forward
             </mat-icon>
@@ -95,22 +99,22 @@
             class="controls__bar__screen__small"
             title="Small"
             (click)="makeSmall()"
-          >
+            >
             <mat-icon class="controls__bar__screen__icon"
               >close_fullscreen</mat-icon
-            >
-          </button>
-          <button
-            class="controls__bar__screen__big"
-            title="Big"
-            (click)="makeBig()"
-          >
-            <mat-icon class="controls__bar__screen__icon"
-              >open_in_full</mat-icon
-            >
-          </button>
-        </span>
-      </div>
-    </mat-card-content>
-  </mat-card>
-</div>
+              >
+            </button>
+            <button
+              class="controls__bar__screen__big"
+              title="Big"
+              (click)="makeBig()"
+              >
+              <mat-icon class="controls__bar__screen__icon"
+                >open_in_full</mat-icon
+                >
+              </button>
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
