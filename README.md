@@ -14,11 +14,11 @@ A modern and customizable video player built with Angular, designed to provide a
 
 🌞 Light Mode
 
-![Light Mode](https://github.com/Bxstars/Player/blob/master/player_big.png "Tela de Player - Mode Light")
+![Light Mode](https://github.com/Bxstars/Player/blob/master/player_light.png "Tela de Player - Mode Light")
 
 🌙 Dark Mode
 
-![Dark Mode](https://github.com/Bxstars/Player/blob/master/player_small.png "Tela de Player - Mode Dark")
+![Dark Mode](https://github.com/Bxstars/Player/blob/master/player_dark3.png "Tela de Player - Mode Dark")
 
 
 # Getting Started
