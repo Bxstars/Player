@@ -1,15 +1,17 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-player',
-  templateUrl: './player.component.html',
-  styleUrls: ['./player.component.css'],
+    selector: 'app-player',
+    templateUrl: './player.component.html',
+    styleUrls: ['./player.component.css'],
+    standalone: false
 })
 export class PlayerComponent implements AfterViewInit {
   myVideo: any;
   status: boolean = true;
   modeDark: boolean = false;
   videoEnd: boolean = true;
+  isBig: boolean = false;
 
   constructor() {}
 
@@ -30,19 +32,10 @@ export class PlayerComponent implements AfterViewInit {
     this.videoEnd = this.myVideo.ended;
   }
 
-  /* #region screen controls */
-  makeSmall() {
-    //240p (SD): 426 x 240
-    this.myVideo.width = 426;
-    this.myVideo.height = 240;
-  }
 
-  makeBig() {
-    // 720p (HD): 1280 x 720
-    this.myVideo.width = 1280;
-    this.myVideo.height = 400;
+  toggleSize() {
+    this.isBig = !this.isBig;
   }
-  /* #endregion */
 
   playPause() {
     this.getDuration();
