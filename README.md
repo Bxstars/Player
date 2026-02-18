@@ -1,18 +1,59 @@
 # Player
 
-Reproduzir vídeos com controles personalizados.
+A modern and customizable video player built with Angular, designed to provide a smooth user experience with flexible and intuitive controls.
 
-![alt text](https://github.com/Bxstars/Player/blob/master/player_big.png "Tela de Player - Mode Light")
-## 
+# Features
 
-![alt text](https://github.com/Bxstars/Player/blob/master/player_small.png "Tela de Player - Mode Dark")
-## 
+- Play / Pause controls
+- Volume control & mute
+- Light and Dark mode
+- Responsive layout
+- Customizable control bar
+
+# Preview
+
+🌞 Light Mode
+
+![Light Mode](https://github.com/Bxstars/Player/blob/master/player_big.png "Tela de Player - Mode Light")
+
+🌙 Dark Mode
+
+![Dark Mode](https://github.com/Bxstars/Player/blob/master/player_small.png "Tela de Player - Mode Dark")
 
 
-## Tecnologias 
+# Getting Started
 
-Tecnologias | Versão | Links
------------- | ------------- | -------------
-Angular | 16.2.4 | https://angular.io/
+#### 1 - Clone the repository
+
+```
+git clone https://github.com/Bxstars/Player.git
+cd Player
+
+```
+#### 2 - Install dependencies
+
+```
+npm install
+
+```
+
+#### 3 - Run the project
+
+```
+ng serve
+
+```
+
+#### Access in your browser:
+```
+http://localhost:4200
+```
+
+## Tech Stack
+
+| Technology | Version | Documentation                              |
+| ---------- | ------- | ------------------------------------------ |
+| Angular    | 21.1.4  | [https://angular.io/](https://angular.io/) |
+
 
 
